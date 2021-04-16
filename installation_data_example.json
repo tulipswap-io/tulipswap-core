@@ -1,0 +1,14 @@
+{
+  "private_key": {
+    "alice": ""
+  },
+  "public_key": {
+    "alice": ""
+  },
+  "contract_address": {
+    "tulip_factory": ""
+  },
+  "provider": {
+    "rpc_endpoint": "https://rpc.oasiseth.org:8545"
+  }
+}
