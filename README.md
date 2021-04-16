@@ -51,9 +51,9 @@ in the `tulip_factory` key.
 
 # Oasis Testnet Addresses
 
-Deployer Address: `0xc5e3B9C6E6d79330765d240eb12f3BB7A5215592`
-FeeTo Address: `0xc5e3B9C6E6d79330765d240eb12f3BB7A5215592`
-TulipFactory Address: `0xca6bd53Ae0c4e288f3826270c32121bF87ab129d`
+Deployer Address: `0xC02656186C435D960E719d7D53ECF92b3ecdCB87`
+FeeTo Address: `0xC02656186C435D960E719d7D53ECF92b3ecdCB87`
+TulipFactory Address: `0xf75d55dD51EE8756fbDB499cc1A963E702a52091`
 
 [Oasis ETH (OETH) faucet on MainNet Beta](http://faucet.oasiseth.org/)
 [scan.oasiseth.org](http://scan.oasiseth.org/)
