@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/tulipswap/tulipswap-core/workflows/CI/badge.svg)](https://github.com/tulipswap/tulipswap-core/actions)
 
-In-depth documentation on TulipSwap is available at [docs.tulipswap.finance](https://docs.tulipswap.finance/).
+In-depth documentation on TulipSwap is available at [docs.tulipswap.io](https://docs.tulipswap.io/).
 
 # Local Development
 

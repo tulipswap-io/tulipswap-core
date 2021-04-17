@@ -9,6 +9,6 @@
     "tulip_factory": ""
   },
   "provider": {
-    "rpc_endpoint": "https://rpc.oasiseth.org:8545"
+    "rpc_endpoint": "http://127.0.0.1:8545"
   }
 }

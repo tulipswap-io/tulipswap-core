@@ -1,11 +1,11 @@
 {
-  "name": "@tulipswap/tulipswap-core",
+  "name": "@tulipswap/tulip-swap-core",
   "description": "🎛 Core contracts for the tulipswap protocol",
   "version": "1.0.1",
   "homepage": "https://tulipswap.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TulipSwap/tulipswap-core.git"
+    "url": "https://github.com/TulipSwap/tulip-swap-core.git"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
@@ -41,5 +41,9 @@
     "test": "mocha",
     "prepublishOnly": "yarn test"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "truffle-flattener": "^1.5.0",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
 }

@@ -20,13 +20,11 @@ contract TulipERC20 {
     mapping(address => uint) public nonces;
 
     event Approval(address indexed owner, address indexed spender, uint value);
+    event Event();
     event Transfer(address indexed from, address indexed to, uint value);
 
     constructor() public {
-        uint chainId;
-        assembly {
-            chainId := chainid()
-        }
+        uint chainId = 69;        
         DOMAIN_SEPARATOR = keccak256(
             abi.encode(
                 keccak256('EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)'),
@@ -63,11 +61,13 @@ contract TulipERC20 {
 
     function approve(address spender, uint value) external returns (bool) {
         _approve(msg.sender, spender, value);
+        emit Event();
         return true;
     }
 
     function transfer(address to, uint value) external returns (bool) {
         _transfer(msg.sender, to, value);
+        emit Event();
         return true;
     }
 
@@ -76,6 +76,7 @@ contract TulipERC20 {
             allowance[from][msg.sender] = allowance[from][msg.sender].sub(value);
         }
         _transfer(from, to, value);
+        emit Event();
         return true;
     }
 
@@ -91,5 +92,6 @@ contract TulipERC20 {
         address recoveredAddress = ecrecover(digest, v, r, s);
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'Tulip: INVALID_SIGNATURE');
         _approve(owner, spender, value);
+        emit Event();
     }
 }
